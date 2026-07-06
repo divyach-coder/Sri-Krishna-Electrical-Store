@@ -1,0 +1,80 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Less Stock</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 24px;
+            background: #fffaf5;
+            color: #222;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            color: #ff6600;
+            margin-bottom: 12px;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+        .card {
+            border: 1px solid #f0c8a8;
+            border-radius: 10px;
+            padding: 16px;
+            background: #fff8f2;
+        }
+        .card h3 {
+            margin: 0 0 8px;
+            color: #333;
+        }
+        .card p {
+            margin: 4px 0;
+            color: #666;
+        }
+        a {
+            display: inline-block;
+            margin-top: 16px;
+            color: #ff6600;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Less Stock</h1>
+        <p>These products need restocking soon.</p>
+        <div class="card-grid">
+            <div class="card">
+                <h3>LED Bulbs</h3>
+                <p>Available: 8</p>
+                <p>Minimum: 20</p>
+            </div>
+            <div class="card">
+                <h3>Switches</h3>
+                <p>Available: 12</p>
+                <p>Minimum: 25</p>
+            </div>
+            <div class="card">
+                <h3>Cables</h3>
+                <p>Available: 6</p>
+                <p>Minimum: 15</p>
+            </div>
+        </div>
+        <a href="dashboard.html">⬅ Dashboard</a>
+    </div>
+</body>
+</html>
